@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_logo"
+        android:contentDescription="Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Recipient Number Display -->
+    <TextView
+        android:id="@+id/recipientNumberDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipient Number"
+        android:textSize="18sp"
+        android:importantForAccessibility="yes"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Message Display (higher box) -->
+    <TextView
+        android:id="@+id/messageDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Message"
+        android:textSize="16sp"
+        android:importantForAccessibility="yes"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:onClick="onClearButtonClick"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp" />
+
+</LinearLayout>

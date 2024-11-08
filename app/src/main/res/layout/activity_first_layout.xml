@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Logo in the center -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:contentDescription="Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />  <!-- Space between logo and next element -->
+
+    <!-- Recipient Number Input -->
+    <EditText
+        android:id="@+id/recipientNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Recipient Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:importantForAccessibility="yes"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Enter Message"
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:importantForAccessibility="yes"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Send Message Button -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:onClick="onSendButtonClick"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:padding="16dp" />
+
+</LinearLayout>
